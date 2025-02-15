@@ -7,24 +7,13 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #acb6e5);
             color: #333;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            position: relative; /* Position relative for absolute positioning of the image */
-            overflow: hidden; /* Prevent overflow */
-        }
-
-        .background-image {
-            position: absolute; /* Position the image absolutely */
-            top: 0;
-            left: 0;
-            width: 100%; /* Cover the entire viewport */
-            height: 100%; /* Cover the entire viewport */
-            object-fit: cover; /* Cover the area without distortion */
-            z-index: -1; /* Send the image to the back */
         }
 
         .container {
@@ -76,7 +65,6 @@
     </style>
 </head>
 <body>
-    <img src="/planet earth.jpg" alt="Background Image" class="background-image"> <!-- Replace with your local image path -->
     <div class="container">
         <h1>Random Earth Fact</h1>
         <p id="factDisplay">Click the button to see a random fact!</p>
